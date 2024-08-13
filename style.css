@@ -5,7 +5,6 @@ body {
     color: black;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 /* Header Styles */
@@ -16,6 +15,13 @@ header {
     font-size: 24px;
     font-weight: bold;
     width: 100%;
+    border-bottom: 3px double black;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Sidebar Navigation Styles */
@@ -25,6 +31,7 @@ nav {
     border: 3px double black;
     padding: 15px;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 /* Navigation Links */
@@ -45,6 +52,8 @@ nav a:hover {
 
 /* Container for content */
 .container {
-    flex: 1;
     padding: 20px;
+    border: 3px double black;
+    box-sizing: border-box;
+    background-color: white;
 }
